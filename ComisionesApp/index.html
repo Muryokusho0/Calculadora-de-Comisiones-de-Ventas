@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Comisiones</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Calculadora de Comisiones</h1>
+      <p>Ingresa tus ventas y obtén tu comisión según el país</p>
+    </header>
+
+    <main class="card">
+
+      <form id="commissionForm" novalidate>
+
+        <div class="field">
+          <label for="country">País</label>
+          <select id="country">
+            <option value="">— Seleccionar país —</option>
+          </select>
+          <span class="error-msg">Selecciona un país.</span>
+        </div>
+
+        <div class="field">
+          <label for="totalSales">Ventas Totales (USD)</label>
+          <div class="input-prefix">
+            <span>$</span>
+            <input type="number" id="totalSales" placeholder="0.00" min="0" step="0.01"/>
+          </div>
+          <span class="error-msg">Ingresa un monto válido mayor a 0.</span>
+        </div>
+
+        <div class="field">
+          <label for="discounts">Descuentos Aplicados (USD)</label>
+          <div class="input-prefix">
+            <span>$</span>
+            <input type="number" id="discounts" placeholder="0.00" min="0" step="0.01"/>
+          </div>
+          <span class="error-msg">Los descuentos no pueden igualar o superar las ventas.</span>
+        </div>
+
+        <div id="errorBanner" class="error-banner"></div>
+
+        <button type="submit" class="btn-calc">Calcular comisión →</button>
+      </form>
+
+      <section id="resultCard" class="result-card" aria-live="polite">
+        <div class="result-header">
+          <span id="resCountry" class="result-country-badge"></span>
+        </div>
+        <div class="result-grid">
+          <div class="result-item">
+            <span class="result-label">Base de cálculo</span>
+            <span class="result-value" id="resBase"></span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Tasa aplicada</span>
+            <span class="result-value accent" id="resRate"></span>
+          </div>
+        </div>
+        <div class="result-total">
+          <span class="total-label">Tu comisión</span>
+          <span class="total-amount" id="resAmount"></span>
+        </div>
+        <div class="result-formula" id="resFormula"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Tasas: India 10% · US 15% · UK 12%</p>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js" defer></script>
+</body>
+</html>
