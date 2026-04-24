@@ -92,11 +92,6 @@ El proyecto sigue una **arquitectura en capas** con separación clara de respons
 | CSS3         | Estilos y animaciones      |
 | JavaScript   | Lógica de negocio y UI     |
 
----
-
-## 📸 Captura de la aplicación
-
-![Calculadora de Comisiones](screenshot.png)
 
 ---
 
