@@ -1,16 +1,16 @@
-# 🧮 Calculadora de Comisiones de Ventas
+# Calculadora de Comisiones de Ventas
 
 Aplicación web que permite a los vendedores calcular su comisión mensual según el país en el que operan y sus ventas totales.
 
 ---
 
-## 📋 Descripción
+## Descripción
 
 La aplicación aplica automáticamente la tasa de comisión correspondiente al país seleccionado, descontando los descuentos aplicados a las ventas. El resultado muestra la base de cálculo, la tasa aplicada, la fórmula y el monto final de la comisión.
 
 ---
 
-## 🌍 Reglas de negocio
+## Reglas de negocio
 
 | País           | Tasa | Fórmula                                      |
 |----------------|------|----------------------------------------------|
@@ -20,7 +20,7 @@ La aplicación aplica automáticamente la tasa de comisión correspondiente al p
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Estructura del proyecto
 
 ```
 comisiones-js/
@@ -40,7 +40,7 @@ comisiones-js/
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El proyecto sigue una **arquitectura en capas** con separación clara de responsabilidades:
 
@@ -66,7 +66,7 @@ El proyecto sigue una **arquitectura en capas** con separación clara de respons
 
 ---
 
-## 🚀 Cómo ejecutar
+## Cómo ejecutar
 
 ### Opción A — Live Server (recomendado)
 
@@ -84,7 +84,7 @@ El proyecto sigue una **arquitectura en capas** con separación clara de respons
 
 ---
 
-## 💻 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología   | Uso                        |
 |--------------|----------------------------|
@@ -95,7 +95,7 @@ El proyecto sigue una **arquitectura en capas** con separación clara de respons
 
 ---
 
-## 📁 Módulos explicados
+## Módulos explicados
 
 ### `CommissionRules.js`
 Fuente única de verdad para las tasas de comisión. Para agregar un nuevo país basta con añadir una entrada en el array `CommissionRules`.
@@ -114,6 +114,6 @@ Controlador de UI. Su única responsabilidad es leer los valores del formulario,
 
 ---
 
-## 👤 Autor
+## Autor
 
 Desarrollado como parte del caso de negocio: **Calculadora de Comisiones de Ventas**.
