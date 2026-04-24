@@ -75,13 +75,6 @@ El proyecto sigue una **arquitectura en capas** con separación clara de respons
 3. Clic derecho en `index.html` → **Open with Live Server**
 4. La app abre en `http://127.0.0.1:5500`
 
-### Opción B — Abrir directo en el navegador
-
-1. Descarga o clona el repositorio
-2. Abre el archivo `index.html` directamente en el navegador
-
-> **Nota:** No requiere instalar Node.js, npm ni ninguna dependencia externa.
-
 ---
 
 ## Tecnologías utilizadas
